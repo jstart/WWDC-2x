@@ -19,6 +19,8 @@
 		ADEDC4421A2EEE72003E6BEC /* 2012.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEDC43D1A2EEE72003E6BEC /* 2012.json */; };
 		ADEDC4431A2EEE72003E6BEC /* 2013.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEDC43E1A2EEE72003E6BEC /* 2013.json */; };
 		ADEDC4441A2EEE72003E6BEC /* 2014.json in Resources */ = {isa = PBXBuildFile; fileRef = ADEDC43F1A2EEE72003E6BEC /* 2014.json */; };
+		C2B99A351A50AF8800963EFB /* SpeedControlOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B99A331A50AF8800963EFB /* SpeedControlOverlayView.xib */; };
+		C2B99A371A50AFE400963EFB /* SpeedControlOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B99A361A50AFE400963EFB /* SpeedControlOverlayView.swift */; };
 		F82A7C839991437F41986767 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB5E07BE4EECA06319BE133 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		ADEDC43D1A2EEE72003E6BEC /* 2012.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2012.json; sourceTree = "<group>"; };
 		ADEDC43E1A2EEE72003E6BEC /* 2013.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2013.json; sourceTree = "<group>"; };
 		ADEDC43F1A2EEE72003E6BEC /* 2014.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2014.json; sourceTree = "<group>"; };
+		C2B99A341A50AF8800963EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SpeedControlOverlayView.xib; sourceTree = "<group>"; };
+		C2B99A361A50AFE400963EFB /* SpeedControlOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedControlOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				AD1ED54D1A2C4BA6008A6269 /* MasterViewController.swift */,
 				AD1ED54F1A2C4BA6008A6269 /* DetailViewController.swift */,
 				AD1ED5511A2C4BA6008A6269 /* Main.storyboard */,
+				C2B99A361A50AFE400963EFB /* SpeedControlOverlayView.swift */,
+				C2B99A331A50AF8800963EFB /* SpeedControlOverlayView.xib */,
 				AD1ED5541A2C4BA6008A6269 /* Images.xcassets */,
 				AD1ED5561A2C4BA6008A6269 /* LaunchScreen.xib */,
 				AD1ED5491A2C4BA6008A6269 /* Supporting Files */,
@@ -202,6 +208,7 @@
 				ADEDC4431A2EEE72003E6BEC /* 2013.json in Resources */,
 				AD1ED5581A2C4BA6008A6269 /* LaunchScreen.xib in Resources */,
 				AD1ED5551A2C4BA6008A6269 /* Images.xcassets in Resources */,
+				C2B99A351A50AF8800963EFB /* SpeedControlOverlayView.xib in Resources */,
 				ADEDC4421A2EEE72003E6BEC /* 2012.json in Resources */,
 				ADEDC4411A2EEE72003E6BEC /* 2011.json in Resources */,
 			);
@@ -248,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0B6DD01A492B0F007D29E9 /* MPMoviePlayerController+XCDOverlayView.m in Sources */,
+				C2B99A371A50AFE400963EFB /* SpeedControlOverlayView.swift in Sources */,
 				AD1ED5501A2C4BA6008A6269 /* DetailViewController.swift in Sources */,
 				AD1ED54E1A2C4BA6008A6269 /* MasterViewController.swift in Sources */,
 				AD1ED54C1A2C4BA6008A6269 /* AppDelegate.swift in Sources */,
@@ -271,6 +279,14 @@
 				AD1ED5571A2C4BA6008A6269 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		C2B99A331A50AF8800963EFB /* SpeedControlOverlayView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2B99A341A50AF8800963EFB /* Base */,
+			);
+			name = SpeedControlOverlayView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
