@@ -20,26 +20,25 @@ class DetailViewController: UIViewController {
     
     func configureView() {
         if let detail = self.detailItem {
+            var contentString = self.detailItem!.objectForKey("hd_link")! as NSString
+            contentString = contentString.stringByReplacingOccurrencesOfString("?dl=1", withString: "")
+            var contentURL = NSURL(string: contentString)
+            moviePlayerVC = MPMoviePlayerViewController(contentURL: contentURL)
+            moviePlayerVC!.moviePlayer.overlayView_xcd = speedControlOverlayView
             
+            self.splitViewController!.presentMoviePlayerViewControllerAnimated(moviePlayerVC)
+            moviePlayerVC!.moviePlayer.play()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureView()
         speedControlOverlayView = UINib(nibName: "SpeedControlOverlayView", bundle: nil).instantiateWithOwner(nil, options: nil).first as SpeedControlOverlayView?
         speedControlOverlayView!.speedSlider.addTarget(self, action: Selector("speedChanged:"), forControlEvents: .ValueChanged)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        var contentString = self.detailItem!.objectForKey("hd_link")! as NSString
-        contentString = contentString.stringByReplacingOccurrencesOfString("?dl=1", withString: "")
-        var contentURL = NSURL(string: contentString)
-        moviePlayerVC = MPMoviePlayerViewController(contentURL: contentURL)
-        moviePlayerVC!.moviePlayer.overlayView_xcd = speedControlOverlayView
-        
-        self.splitViewController!.presentMoviePlayerViewControllerAnimated(moviePlayerVC)
-        moviePlayerVC!.moviePlayer.play()
+    override func viewWillAppear(animated: Bool) {
+        self.configureView()
     }
     
     func speedChanged(sender: UISlider){
